@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0e4d4;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* กล่องเครื่องคิดเลข */
+.calculator {
+    background: #061c43;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(255, 251, 251, 0.5);
+    width: 340px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ช่องแสดงผล */
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    color: #070706;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 8px #eeeeee;
+}
+
+/* ปุ่ม */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+.zero {
+    grid-column: 2 / span 1;
+  }
+
+/* สไตล์ปุ่มพื้นฐาน */
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f9f7f7;
+    color: #e32f2f;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* ปุ่ม operator */
+.operator {
+    background-color: #f9f7f7;
+    color: #e32f2f;
+}
+
+.operator:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ปุ่มเท่ากับ */
+.equal {
+    background-color: #fffffe;
+    color: #da9e3c;
+    font-weight: 600;
+}
+
+.equal:hover {
+    background-color: rgb(255, 255, 93);
+}
+
+/* ปุ่มเคลียร์ */
+.clear {
+    grid-column: 1 / span 2;
+    background-color: #ff5e57;
+    color: #fff;
+    grid-column: span 3;
+    font-weight: bold;
+}
+
+.clear:hover {
+    background-color: #ff3b30;
+}
